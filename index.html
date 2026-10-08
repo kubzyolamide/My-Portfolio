@@ -68,7 +68,7 @@
                 </p>
                 <div class="flex flex-wrap gap-4 items-center">
                     <a href="#projects" class="bg-accent hover:bg-accentHover text-white px-8 py-4 rounded-xl font-semibold transition shadow-xl shadow-accent/25 flex items-center gap-2.5">
-                        Explore My Projects <i class="fa-solid fa-arrow-down text-sm"></i>
+                        Explore Technical Projects <i class="fa-solid fa-arrow-down text-sm"></i>
                     </a>
                     <a href="#contact" class="bg-cardBg hover:bg-cardHover text-gray-200 border border-gray-700/80 px-8 py-4 rounded-xl font-semibold transition flex items-center gap-2.5">
                         Get In Touch
@@ -87,7 +87,7 @@
             </div>
             <div class="p-4">
                 <div class="text-3xl sm:text-4xl font-extrabold text-neonCyan mb-1">Full-Stack</div>
-                <div class="text-xs sm:text-sm text-gray-400 font-medium">Web App Architecture</div>
+                <div class="text-xs sm:text-sm text-gray-400 font-medium">Flask & Database Architecture</div>
             </div>
             <div class="p-4">
                 <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">Network</div>
@@ -203,57 +203,85 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - In-Depth & Evidence-Backed -->
     <section id="projects" class="py-24 border-b border-gray-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-2xl mb-16">
-                <h2 class="text-xs font-bold text-accent tracking-widest uppercase mb-3">Portfolio Work</h2>
+                <h2 class="text-xs font-bold text-accent tracking-widest uppercase mb-3">Verified Engineering Work</h2>
                 <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Projects & Systems</h3>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Project 1 -->
+                <!-- Project 1: TelesciPortal -->
                 <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition shadow-xl">
                     <div class="p-8 sm:p-10">
                         <div class="flex items-center justify-between mb-6">
-                            <span class="px-4 py-1.5 bg-accent/10 text-neonCyan text-xs font-semibold rounded-full border border-accent/20">Live Web Application</span>
+                            <span class="px-4 py-1.5 bg-accent/10 text-neonCyan text-xs font-semibold rounded-full border border-accent/20">Live Production App</span>
                             <i class="fa-solid fa-graduation-cap text-gray-600 text-2xl"></i>
                         </div>
-                        <h4 class="text-2xl font-bold text-white mb-3">Past Questions & Course Material Web App</h4>
+                        <h4 class="text-2xl font-bold text-white mb-3">TelesciPortal: Academic & Course Material Hub</h4>
                         <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
-                            Engineered and deployed a comprehensive full-stack web portal designed to centralize, archive, and distribute academic past questions and learning resources. Features an intuitive file search engine, smooth uploads, and seamless student access.
+                            Engineered a full-stack web application designed to eliminate resource fragmentation by centralizing course materials, lecture notes, and past questions. Built with Python and Flask, utilizing a structured relational database (SQLite/<code>telesci.db</code>) and secure local file uploads (<code>uploads/</code>) to manage high-volume document exchange seamlessly.
                         </p>
+                        <div class="space-y-3 mb-8 bg-darkBg/60 p-5 rounded-2xl border border-gray-800/80 text-xs sm:text-sm text-gray-300">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-accent mt-1"></i>
+                                <span><strong>Backend Architecture:</strong> Developed using Python/Flask with custom route controllers, session authentication (`models.py`), and dynamic template rendering (`templates/`).</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-accent mt-1"></i>
+                                <span><strong>Data Management:</strong> Integrated persistent storage handling multimedia files, lecture documentation PDFs, and student submissions.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-accent mt-1"></i>
+                                <span><strong>Deployment Evidence:</strong> Successfully deployed and hosted live on PythonAnywhere, with full source code version-controlled and synced via GitHub.</span>
+                            </div>
+                        </div>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Python / Flask</span>
-                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">HTML/CSS/JS</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">SQLite & Models</span>
                             <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">PythonAnywhere</span>
                         </div>
                     </div>
                     <div class="px-8 sm:px-10 pb-8 pt-0 flex items-center gap-4">
                         <a href="https://telesciportal.pythonanywhere.com/" target="_blank" class="bg-accent hover:bg-accentHover text-white px-6 py-3 rounded-xl text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-accent/20">
-                            <i class="fa-solid fa-external-link-alt"></i> Visit Live App
+                            <i class="fa-solid fa-external-link-alt"></i> Visit Live App (`telesciportal`)
                         </a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: Telecom Resource & 5G Platform -->
                 <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition shadow-xl">
                     <div class="p-8 sm:p-10">
                         <div class="flex items-center justify-between mb-6">
-                            <span class="px-4 py-1.5 bg-indigo-500/10 text-indigo-400 text-xs font-semibold rounded-full border border-indigo-500/20">Telecom Research Hub</span>
+                            <span class="px-4 py-1.5 bg-indigo-500/10 text-indigo-400 text-xs font-semibold rounded-full border border-indigo-500/20">Telecom Infrastructure</span>
                             <i class="fa-solid fa-tower-broadcast text-gray-600 text-2xl"></i>
                         </div>
-                        <h4 class="text-2xl font-bold text-white mb-3">Telecom Resource & 5G Research Platform</h4>
+                        <h4 class="text-2xl font-bold text-white mb-3">Telecom Resource Hub & 5G Research Framework</h4>
                         <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
-                            Built a structured digital research repository for telecommunication resources, technical documentation, and network performance data. Integrated metadata tagging for research papers, diagram inconsistency auditing, and 5G/millimeter-wave communication visualizations.
+                            Developed a specialized technical portal and research repository dedicated to telecommunications systems, cellular network performance metrics, and 5G infrastructure documentation. Designed to index heavy technical reports, satellite communications guides, and wireless evolution studies.
                         </p>
+                        <div class="space-y-3 mb-8 bg-darkBg/60 p-5 rounded-2xl border border-gray-800/80 text-xs sm:text-sm text-gray-300">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                                <span><strong>Technical Tagging System:</strong> Implemented systematic indexing for specialized literature (e.g., Long-Term Evolution LTE studies, EV Charging infrastructure papers, and mmWave research).</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                                <span><strong>Network Simulation Focus:</strong> Backed by practical simulation frameworks using Cisco Packet Tracer and IP/MPLS routing configurations.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                                <span><strong>Documentation Standard:</strong> Rigorous technical reporting and desktop publishing alignment using professional asset design tools.</span>
+                            </div>
+                        </div>
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Technical Documentation</span>
-                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Metadata Tagging</span>
-                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">5G / mmWave</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">5G / mmWave Research</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Metadata Indexing</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Technical Reporting</span>
                         </div>
                     </div>
                     <div class="px-8 sm:px-10 pb-8 pt-0 flex items-center gap-4">
-                        <span class="text-xs text-gray-500 italic">Research & Data Repository System</span>
+                        <span class="text-xs text-gray-500 italic">Infrastructure Research & Repository System</span>
                     </div>
                 </div>
             </div>
@@ -282,7 +310,7 @@
                         <i class="fa-solid fa-code text-xl"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Web Development</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">Full-stack web applications, dynamic database management, and responsive frontend design.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Full-stack Python/Flask applications, relational database modeling, and responsive frontend design.</p>
                 </div>
                 <!-- Skill 3 -->
                 <div class="p-8 rounded-3xl bg-cardBg border border-gray-800/80 hover:border-accent/50 transition">
