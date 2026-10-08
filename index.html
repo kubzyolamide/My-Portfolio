@@ -1,131 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issa Yakub Olamide | Software Developer & Telecom Researcher</title>
+    <title>Issa Yakub Olamide | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            50: '#eef2ff',
-                            100: '#e0e7ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            900: '#312e81',
-                        }
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        accent: '#6366f1',
+                        accentHover: '#4f46e5'
                     }
                 }
             }
         }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#hero" class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent flex items-center gap-2">
-                <i class="fa-solid fa-cube text-indigo-400"></i> I. Y. Olamide
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-accent animate-pulse"></span>
+                ISSA YAKUB OLAMIDE
             </a>
-            
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
-                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
-                <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#expertise" class="hover:text-accent transition">Expertise</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
             </nav>
-
-            <div class="hidden md:flex items-center gap-4">
-                <a href="#contact" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-600/30">
-                    Get in Touch
-                </a>
-            </div>
-
-            <!-- Mobile menu button -->
-            <button id="menu-btn" aria-label="Toggle menu" class="md:hidden text-slate-300 hover:text-white text-xl p-2 focus:outline-none">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Nav Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
-            <a href="#about" class="block text-slate-300 hover:text-indigo-400 transition">About</a>
-            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 transition">Expertise</a>
-            <a href="#projects" class="block text-slate-300 hover:text-indigo-400 transition">Projects</a>
-            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 transition">Contact</a>
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accentHover text-white px-5 py-2.5 rounded-full text-sm font-medium transition shadow-lg shadow-accent/20">
+                <i class="fa-solid fa-paper-plane"></i> Let's Connect
+            </a>
         </div>
     </header>
 
-    <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute top-1/3 right-10 w-80 h-80 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-24 md:py-32 border-b border-gray-800/60">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6">
-                    <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span> Telecommunications Science Graduate & Developer
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-circle-dot text-[10px]"></i> Telecommunications Scientist & Web Developer
                 </div>
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                    Hi, I'm <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Issa Yakub Olamide</span>
+                    Engineering networks & building digital solutions.
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed">
-                    Bridging telecommunications engineering, network infrastructure research, software development, and Web3 digital storytelling.
+                <p class="text-lg sm:text-xl text-gray-400 mb-8 leading-relaxed">
+                    Telecommunications Science graduate from the University of Ilorin. Experienced in network engineering, full-stack web applications, 5G research infrastructure, and Web3 community management.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#projects" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/30 transition flex items-center gap-2">
-                        <span>View Projects</span>
-                        <i class="fa-solid fa-arrow-down text-sm"></i>
+                    <a href="#projects" class="bg-accent hover:bg-accentHover text-white px-7 py-3.5 rounded-xl font-medium transition shadow-lg shadow-accent/25 flex items-center gap-2">
+                        View Projects <i class="fa-solid fa-arrow-right text-sm"></i>
                     </a>
-                    <a href="#contact" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold transition flex items-center gap-2">
-                        <span>Contact Me</span>
-                        <i class="fa-solid fa-envelope text-sm"></i>
+                    <a href="#contact" class="bg-cardBg hover:bg-gray-800 text-gray-200 border border-gray-700 px-7 py-3.5 rounded-xl font-medium transition flex items-center gap-2">
+                        Get in Touch
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-slate-900/50 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 p-2 shadow-2xl">
-                        <img src="https://placehold.co/600x700/1e293b/818cf8?text=Issa+Yakub+Olamide" alt="Issa Yakub Olamide" class="rounded-xl w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x700/1e293b/818cf8?text=Portfolio'">
+    <!-- About Section -->
+    <section id="about" class="py-24 border-b border-gray-800/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-1">
+                    <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 text-center relative">
+                        <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-tr from-accent to-indigo-400 flex items-center justify-center text-3xl font-bold text-white shadow-xl shadow-accent/20">
+                            IY
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">Issa Yakub Olamide</h3>
+                        <p class="text-accent text-sm mb-4">Telecommunications Professional</p>
+                        <div class="flex justify-center gap-4 text-gray-400">
+                            <a href="mailto:kubzyolamide@gmail.com" class="hover:text-accent transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+                            <a href="https://x.com/Maestro_yky" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-block text-xs font-semibold tracking-wider text-indigo-400 uppercase">About Me</div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Telecommunications Science Graduate & Technical Consultant</h2>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        I am a graduate of Telecommunications Science from the prestigious <strong class="text-white">University of Ilorin</strong> with extensive hands-on expertise as a network engineer, mobile technician, and technical consultant.
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">Professional Background</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        My professional background is diverse, encompassing roles as a network engineer, mobile technician, and technical consultant. I bridge the gap between heavy technical telecommunications infrastructure and modern digital software systems.
                     </p>
-                    <p class="text-slate-400 leading-relaxed text-base">
-                        Beyond core telecom infrastructure (including IP/MPLS and 5G architectures), my skill set spans full-stack web development, Web3 community management, content creation, digital storytelling, graphic design, and linguistic localization (Yoruba).
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Alongside core network engineering, I possess significant expertise in Web3 community management, content creation, digital storytelling, and graphical design using tools like CorelDraw and Photoshop.
                     </p>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
-                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-                            <div class="text-2xl font-bold text-indigo-400 mb-1">Unilorin</div>
-                            <div class="text-xs text-slate-400">Telecom Science</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-cardBg border border-gray-800">
+                            <div class="text-accent font-bold text-xl mb-1">B.Sc.</div>
+                            <div class="text-xs text-gray-400">Telecom Science (Unilorin)</div>
                         </div>
-                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-                            <div class="text-2xl font-bold text-cyan-400 mb-1">Network</div>
-                            <div class="text-xs text-slate-400">Engineering & IP/MPLS</div>
+                        <div class="p-4 rounded-xl bg-cardBg border border-gray-800">
+                            <div class="text-accent font-bold text-xl mb-1">Web3</div>
+                            <div class="text-xs text-gray-400">Community Management & Growth</div>
                         </div>
-                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 col-span-2 sm:col-span-1">
-                            <div class="text-2xl font-bold text-indigo-300 mb-1">Web3 & Media</div>
-                            <div class="text-xs text-slate-400">Community & Design</div>
+                        <div class="p-4 rounded-xl bg-cardBg border border-gray-800">
+                            <div class="text-accent font-bold text-xl mb-1">Network</div>
+                            <div class="text-xs text-gray-400">Simulation & IP/MPLS</div>
                         </div>
                     </div>
                 </div>
@@ -133,266 +114,139 @@
         </div>
     </section>
 
-    <section id="expertise" class="py-20 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-24 border-b border-gray-800/60">
+        <div class="max-w-6xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-block text-xs font-semibold tracking-wider text-indigo-400 uppercase mb-2">Capabilities</div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Expertise & Skills</h2>
-                <p class="text-slate-400">Comprehensive technical domains spanning telecommunications, engineering, software, and digital media.</p>
+                <h2 class="text-3xl font-bold text-white mb-4">Core Skills & Expertise</h2>
+                <p class="text-gray-400">A comprehensive toolkit spanning network engineering, software tools, and digital media.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Skill Group 1: Telecom & Networking -->
-                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-tower-broadcast"></i>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accent/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-network-wired text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Telecom & Networking</h3>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> 5G Infrastructure & Research</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> IP/MPLS Network Analysis</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Network Simulation (Cisco Packet Tracer)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Mobile Hardware & Troubleshooting</li>
-                    </ul>
+                    <h3 class="text-lg font-bold text-white mb-2">Network Engineering & Simulation</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Network simulation with Cisco Packet Tracer, IP/MPLS network analysis, and infrastructure testing.</p>
                 </div>
-
-                <!-- Skill Group 2: Software & Development -->
-                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-code"></i>
+                <!-- Skill Card 2 -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accent/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-code text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Software & Web Apps</h3>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> Full-Stack Web Development</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> AI Chatbot & Interviewer Applications</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> Resource Hub & Repository Platforms</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> Desktop Publishing (Microsoft Office)</li>
-                    </ul>
+                    <h3 class="text-lg font-bold text-white mb-2">Web Development & Apps</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Building full-stack web applications, centralizing data hubs, and deploying responsive user interfaces.</p>
                 </div>
-
-                <!-- Skill Group 3: Digital Media, Web3 & Design -->
-                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-palette"></i>
+                <!-- Skill Card 3 -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accent/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-comments text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Web3, Design & Media</h3>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Web3 Community Management</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Content Creation & Digital Storytelling</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Graphic Design (CorelDraw, Photoshop)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Linguistic Services & Translation (Yoruba)</li>
-                    </ul>
+                    <h3 class="text-lg font-bold text-white mb-2">Web3 & Community Strategy</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Expertise in Web3 community management, content creation, and digital storytelling.</p>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accent/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-paintbrush text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Graphic Design & Media</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Professional graphic design using CorelDraw and Photoshop, asset creation, and metadata tagging.</p>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accent/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-tower-broadcast text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Telecom & 5G Infrastructure</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Researching 5G infrastructure, reviewing technical documentation, and millimeter-wave communication research.</p>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accent/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-file-lines text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Desktop Publishing & Tools</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Proficient in desktop publishing software, including the Microsoft Office suite and technical reporting.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-slate-900/50 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 border-b border-gray-800/60">
+        <div class="max-w-6xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-block text-xs font-semibold tracking-wider text-indigo-400 uppercase mb-2">Portfolio</div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Featured Projects</h2>
-                <p class="text-slate-400">Key web applications, network research, and AI systems built by Issa Yakub Olamide.</p>
+                <h2 class="text-3xl font-bold text-white mb-4">Featured Projects</h2>
+                <p class="text-gray-400">Explore my technical web applications and infrastructure resource systems.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Project 1: Telecom Resource Hub / Course Material App -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-indigo-500/50 transition-all duration-300 shadow-xl group">
-                    <div class="p-6 sm:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-cardBg border border-gray-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition">
+                    <div class="p-8">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl font-bold">
-                                <i class="fa-solid fa-book-bookmark"></i>
-                            </div>
-                            <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-medium">Web Platform</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">Web App</span>
+                            <i class="fa-solid fa-graduation-cap text-gray-500 text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">Telecom Resource Hub & Course Material App</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            A centralized platform designed to share academic past questions, course materials, and telecommunication technical documents with structured repository and metadata search.
+                        <h3 class="text-xl font-bold text-white mb-3">Past Questions & Course Material Web App</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Developed a full-stack web application designed to centralize and share academic past questions and course materials. Implemented an intuitive user interface and structured repository system for efficient file searching, uploading, and resource management.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">Web App</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">Resource Hub</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">File Repository</span>
-                        </div>
                     </div>
-                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between">
-                        <span class="text-xs text-slate-400">Academic & Technical</span>
-                        <button onclick="openProjectModal('Telecom Resource Hub & Course Material App', 'Developed a comprehensive web application designed to centralize and share academic past questions, study materials, and technical telecommunication documents. Implemented structured repositories, metadata tagging, and efficient file searching.')" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-1 transition">
-                            <span>Details</span> <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
+                    <div class="px-8 pb-8 pt-0 flex items-center gap-4">
+                        <a href="https://telesciportal.pythonanywhere.com/" target="_blank" class="bg-accent hover:bg-accentHover text-white px-5 py-2.5 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                            <i class="fa-solid fa-external-link-alt"></i> Visit Live App
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2: 5G Infrastructure & IP/MPLS Network Analysis -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all duration-300 shadow-xl group">
-                    <div class="p-6 sm:p-8">
+                <!-- Project 2 -->
+                <div class="bg-cardBg border border-gray-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition">
+                    <div class="p-8">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold">
-                                <i class="fa-solid fa-network-wired"></i>
-                            </div>
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-medium">Telecom Research</span>
+                            <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 text-xs font-semibold rounded-full">Telecom Research</span>
+                            <i class="fa-solid fa-satellite-dish text-gray-500 text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">5G Infrastructure & IP/MPLS Network Analysis</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            Investigative research on next-gen 5G wireless infrastructures, millimeter-wave propagation, and advanced IP/MPLS network performance simulation and optimization.
+                        <h3 class="text-xl font-bold text-white mb-3">Telecom Resource Hub & 5G Infrastructure</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Developed a centralized platform for telecommunication resources, technical documentation, and network performance data. Implemented metadata tagging for research papers and digital media, facilitating efficient navigation and review of 5G visualizations and millimeter-wave communication research.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">5G Research</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">IP/MPLS</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">Packet Tracer</span>
-                        </div>
                     </div>
-                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between">
-                        <span class="text-xs text-slate-400">Network Simulation</span>
-                        <button onclick="openProjectModal('5G Infrastructure & IP/MPLS Network Analysis', 'Conducted deep research and simulation on 5G network architectures and IP/MPLS backbone routing. Analyzed network performance metrics, traffic engineering, and millimeter-wave communication channels.')" class="text-cyan-400 hover:text-cyan-300 text-sm font-semibold flex items-center gap-1 transition">
-                            <span>Details</span> <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Project 3: AI Interviewer & Chatbot Applications -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-indigo-500/50 transition-all duration-300 shadow-xl group">
-                    <div class="p-6 sm:p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl font-bold">
-                                <i class="fa-solid fa-robot"></i>
-                            </div>
-                            <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-medium">AI Application</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">AI Interviewer & Chatbot Applications</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            Developed interactive AI-powered chatbots and simulated interview assistants designed to help candidates prepare for technical and professional interviews.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">AI Chatbot</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">Interactive UI</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs">JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between">
-                        <span class="text-xs text-slate-400">Conversational AI</span>
-                        <button onclick="openProjectModal('AI Interviewer & Chatbot Applications', 'Engineered intelligent chatbot applications and AI interview preparation tools with dynamic prompt handling, user evaluation workflows, and responsive web interfaces.')" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-1 transition">
-                            <span>Details</span> <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
+                    <div class="px-8 pb-8 pt-0 flex items-center gap-4">
+                        <span class="text-xs text-gray-500 italic">Research Repository & Resource System</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                    <div class="inline-block text-xs font-semibold tracking-wider text-indigo-400 uppercase mb-2">Get in Touch</div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Let's Connect</h2>
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        Looking for a telecom engineer, technical consultant, developer, or Web3 storyteller? Reach out and let's discuss your project or opportunity.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 text-slate-300">
-                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs text-slate-400">Email</div>
-                                <div class="font-medium text-white">issayakubolamide@example.com</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-300">
-                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs text-slate-400">Location</div>
-                                <div class="font-medium text-white">Nigeria / Remote</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8">
-                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1">Your Name</label>
-                            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition" placeholder="John Doe">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1">Your Email</label>
-                            <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition" placeholder="john@example.com">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1">Message</label>
-                            <textarea rows="4" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition" placeholder="Hello Issa, I would like to discuss..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition shadow-lg shadow-indigo-600/30">
-                            Send Message
-                        </button>
-                    </form>
-                    <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm text-center">
-                        Message sent successfully! Thank you for reaching out.
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Work Together</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto">Have a project, collaboration, or opportunity in mind? Reach out directly through email or connect with me on X.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:kubzyolamide@gmail.com" class="bg-cardBg hover:bg-gray-800 border border-gray-700 text-gray-200 px-8 py-4 rounded-xl font-medium transition flex items-center gap-3">
+                    <i class="fa-solid fa-envelope text-accent text-lg"></i> kubzyolamide@gmail.com
+                </a>
+                <a href="https://x.com/Maestro_yky" target="_blank" class="bg-cardBg hover:bg-gray-800 border border-gray-700 text-gray-200 px-8 py-4 rounded-xl font-medium transition flex items-center gap-3">
+                    <i class="fa-brands fa-x-twitter text-accent text-lg"></i> @Maestro_yky
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-sm text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 bg-cardBg/30">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
             <p>&copy; 2026 Issa Yakub Olamide. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 sm:mt-0">
+                <a href="https://x.com/Maestro_yky" target="_blank" class="hover:text-accent transition">X (Twitter)</a>
+                <a href="mailto:kubzyolamide@gmail.com" class="hover:text-accent transition">Email</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
-            <button onclick="closeProjectModal()" aria-label="Close modal" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg p-2 focus:outline-none">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 id="modal-title" class="text-2xl font-bold text-white mb-4"></h3>
-            <p id="modal-desc" class="text-slate-300 text-sm leading-relaxed mb-6"></p>
-            <button onclick="closeProjectModal()" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm transition">
-                Close
-            </button>
-        </div>
-    </div>
-
-    <script>
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu on click
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Project Modal functions
-        function openProjectModal(title, desc) {
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-desc').innerText = desc;
-            document.getElementById('project-modal').classList.remove('hidden');
-        }
-
-        function closeProjectModal() {
-            document.getElementById('project-modal').classList.add('hidden');
-        }
-
-        // Form submission handler
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            document.getElementById('contact-form').reset();
-            document.getElementById('form-success').classList.remove('hidden');
-            setTimeout(() => {
-                document.getElementById('form-success').classList.add('hidden');
-            }, 5000);
-        }
-    </script>
 </body>
 </html>
