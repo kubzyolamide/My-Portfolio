@@ -18,7 +18,8 @@
                         cardHover: '#1e293b',
                         accent: '#3b82f6',
                         accentHover: '#2563eb',
-                        neonCyan: '#06b6d4'
+                        neonCyan: '#06b6d4',
+                        fbBlue: '#1877F2'
                     }
                 }
             }
@@ -43,8 +44,9 @@
                 <a href="#skills" class="hover:text-accent transition">Skills</a>
                 <a href="#contact" class="hover:text-accent transition">Contact</a>
             </nav>
-            <div class="flex items-center gap-4">
-                <a href="https://x.com/Maestro_yky" target="_blank" class="hidden sm:inline-flex text-gray-400 hover:text-white transition text-lg"><i class="fa-brands fa-x-twitter"></i></a>
+            <div class="flex items-center gap-3">
+                <a href="https://x.com/Maestro_yky" target="_blank" class="w-9 h-9 rounded-xl bg-cardBg border border-gray-800 text-gray-300 hover:text-white hover:border-accent flex items-center justify-center transition text-sm" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://web.facebook.com/kubzyolamide/" target="_blank" class="w-9 h-9 rounded-xl bg-cardBg border border-gray-800 text-gray-300 hover:text-fbBlue hover:border-fbBlue flex items-center justify-center transition text-sm" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="mailto:kubzyolamide@gmail.com" class="bg-accent hover:bg-accentHover text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition shadow-lg shadow-accent/20 flex items-center gap-2">
                     <i class="fa-solid fa-paper-plane text-xs"></i> Let's Talk
                 </a>
@@ -101,7 +103,11 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span class="text-gray-500">X (Twitter)</span>
-                                <a href="https://x.com/Maestro_yky" target="_blank" class="text-accent hover:underline">@Maestro_yky</a>
+                                <a href="https://x.com/Maestro_yky" target="_blank" class="text-accent hover:underline flex items-center gap-1.5"><i class="fa-brands fa-x-twitter text-xs"></i> @Maestro_yky</a>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-500">Facebook</span>
+                                <a href="https://web.facebook.com/kubzyolamide/" target="_blank" class="text-blue-400 hover:underline flex items-center gap-1.5"><i class="fa-brands fa-facebook text-xs"></i> kubzyolamide</a>
                             </div>
                         </div>
                     </div>
@@ -128,4 +134,198 @@
 
     <!-- Graphic Design Gallery Section -->
     <section id="designs" class="py-24 border-b border-gray-800/60">
-        <div class
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <h2 class="text-xs font-bold text-accent tracking-widest uppercase mb-3">Visual Art & Branding</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Graphic Design Portfolio</h3>
+                <p class="text-gray-400 mt-2">Commercial flyers, promotional materials, and brand identity design crafted with Photoshop & CorelDraw.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Design Item 1 -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden hover:border-accent/50 transition shadow-xl group">
+                    <div class="h-72 overflow-hidden bg-darkBg flex items-center justify-center p-2">
+                        <img src="twinkle-logo.jpg" alt="Twinkle Wellness Spa Logo" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-semibold rounded-full border border-purple-500/20">Brand Identity & Logo</span>
+                        <h4 class="text-lg font-bold text-white mt-3 mb-2">Twinkle Wellness Spa Logo</h4>
+                        <p class="text-gray-400 text-sm">Minimalist floral emblem design reflecting relaxation, skin care, and luxury spa identity.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 2 -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden hover:border-accent/50 transition shadow-xl group">
+                    <div class="h-72 overflow-hidden bg-darkBg flex items-center justify-center p-2">
+                        <img src="spa-flyer.jpg" alt="Twinkle Wellness Spa Flyer" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-semibold rounded-full border border-purple-500/20">Promotional Flyer</span>
+                        <h4 class="text-lg font-bold text-white mt-3 mb-2">Spa Services & Locations Flyer</h4>
+                        <p class="text-gray-400 text-sm">Professional layout showcasing facial treatments, massage therapies, and multi-branch locations.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 3 -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden hover:border-accent/50 transition shadow-xl group">
+                    <div class="h-72 overflow-hidden bg-darkBg flex items-center justify-center p-2">
+                        <img src="festive-promo.jpg" alt="December Festive Promo" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="px-3 py-1 bg-red-500/10 text-red-400 text-xs font-semibold rounded-full border border-red-500/20">Campaign Design</span>
+                        <h4 class="text-lg font-bold text-white mt-3 mb-2">December Festive Promo Campaign</h4>
+                        <p class="text-gray-400 text-sm">Festive promotional artwork highlighting seasonal discounts and customer participation guidelines.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 4 -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden hover:border-accent/50 transition shadow-xl group">
+                    <div class="h-72 overflow-hidden bg-darkBg flex items-center justify-center p-2">
+                        <img src="jersey-flyer.jpg" alt="Jumpstrr Wears Jersey Sales" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="px-3 py-1 bg-accent/10 text-neonCyan text-xs font-semibold rounded-full border border-accent/20">E-Commerce Artwork</span>
+                        <h4 class="text-lg font-bold text-white mt-3 mb-2">Jumpstrr Wears Jersey Sales</h4>
+                        <p class="text-gray-400 text-sm">Dynamic sports apparel advertisement featuring custom jersey cataloging and direct order routing.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 5 -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden hover:border-accent/50 transition shadow-xl group">
+                    <div class="h-72 overflow-hidden bg-darkBg flex items-center justify-center p-2">
+                        <img src="data-plug.jpg" alt="Ennythorn Plan Data Plug" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-semibold rounded-full border border-green-500/20">Infographic & Price List</span>
+                        <h4 class="text-lg font-bold text-white mt-3 mb-2">Ennythorn Data Plug Rate Sheet</h4>
+                        <p class="text-gray-400 text-sm">Structured pricing infographic for telecom data subscriptions across MTN, Glo, Airtel, and 9mobile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Projects Section -->
+    <section id="projects" class="py-24 border-b border-gray-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <h2 class="text-xs font-bold text-accent tracking-widest uppercase mb-3">Verified Engineering Work</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Web Applications</h3>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1: TelesciPortal -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition shadow-xl">
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-4 py-1.5 bg-accent/10 text-neonCyan text-xs font-semibold rounded-full border border-accent/20">Live Production App</span>
+                            <i class="fa-solid fa-graduation-cap text-gray-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">TelesciPortal: Academic & Course Material Hub</h4>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Engineered a full-stack web application designed to eliminate resource fragmentation by centralizing course materials, lecture notes, and past questions. Built with Python and Flask, utilizing a structured relational database (SQLite/<code>telesci.db</code>) and secure local file uploads (<code>uploads/</code>) to manage high-volume document exchange seamlessly.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Python / Flask</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">SQLite & Models</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">PythonAnywhere</span>
+                        </div>
+                    </div>
+                    <div class="px-8 sm:px-10 pb-8 pt-0 flex items-center gap-4">
+                        <a href="https://telesciportal.pythonanywhere.com/" target="_blank" class="bg-accent hover:bg-accentHover text-white px-6 py-3 rounded-xl text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-accent/20">
+                            <i class="fa-solid fa-external-link-alt"></i> Visit Live App (`telesciportal`)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Telecom Resource & 5G Platform -->
+                <div class="bg-cardBg border border-gray-800/80 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition shadow-xl">
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-4 py-1.5 bg-indigo-500/10 text-indigo-400 text-xs font-semibold rounded-full border border-indigo-500/20">Telecom Infrastructure</span>
+                            <i class="fa-solid fa-tower-broadcast text-gray-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">Telecom Resource Hub & 5G Research Framework</h4>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Developed a specialized technical portal and research repository dedicated to telecommunications systems, cellular network performance metrics, and 5G infrastructure documentation. Designed to index heavy technical reports, satellite communications guides, and wireless evolution studies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">5G / mmWave Research</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">CorelDraw & Photoshop</span>
+                            <span class="px-3 py-1 bg-darkBg text-gray-400 text-xs rounded-lg border border-gray-800">Technical Reporting</span>
+                        </div>
+                    </div>
+                    <div class="px-8 sm:px-10 pb-8 pt-0 flex items-center gap-4">
+                        <span class="text-xs text-gray-500 italic">Infrastructure Research & Design System</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise Grid -->
+    <section id="skills" class="py-24 border-b border-gray-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16 text-center mx-auto">
+                <h2 class="text-xs font-bold text-accent tracking-widest uppercase mb-3">Capabilities</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Core Technical Stack & Design Skills</h3>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-cardBg border border-gray-800/80 hover:border-accent/50 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-6">
+                        <i class="fa-solid fa-paintbrush text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Graphic Design & Art Direction</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Mastery of CorelDraw and Adobe Photoshop for visual branding, asset creation, and layout design.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-cardBg border border-gray-800/80 hover:border-accent/50 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-6">
+                        <i class="fa-solid fa-code text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Web Development</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Full-stack Python/Flask applications, relational database modeling, and responsive frontend design.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-cardBg border border-gray-800/80 hover:border-accent/50 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-6">
+                        <i class="fa-solid fa-network-wired text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Network Simulation</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Cisco Packet Tracer, IP/MPLS routing analysis, and infrastructure performance testing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-xs font-bold text-accent tracking-widest uppercase mb-3">Get In Touch</h2>
+            <h3 class="text-3xl sm:text-5xl font-extrabold text-white mb-6">Let's Build Something Exceptional Together</h3>
+            <p class="text-gray-400 mb-12 text-lg max-w-xl mx-auto">Have an exciting project, design commission, telecom consulting role, or Web3 collaboration in mind? Reach out directly through email or connect on social media.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:kubzyolamide@gmail.com" class="bg-cardBg hover:bg-cardHover border border-gray-700/80 text-gray-200 px-8 py-5 rounded-2xl font-semibold transition flex items-center gap-3 shadow-xl">
+                    <i class="fa-solid fa-envelope text-accent text-xl"></i> kubzyolamide@gmail.com
+                </a>
+                <a href="https://x.com/Maestro_yky" target="_blank" class="bg-cardBg hover:bg-cardHover border border-gray-700/80 text-gray-200 px-8 py-5 rounded-2xl font-semibold transition flex items-center gap-3 shadow-xl">
+                    <i class="fa-brands fa-x-twitter text-accent text-xl"></i> @Maestro_yky
+                </a>
+                <a href="https://web.facebook.com/kubzyolamide/" target="_blank" class="bg-cardBg hover:bg-cardHover border border-gray-700/80 text-gray-200 px-8 py-5 rounded-2xl font-semibold transition flex items-center gap-3 shadow-xl">
+                    <i class="fa-brands fa-facebook text-fbBlue text-xl"></i> Facebook Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800/80 py-10 bg-cardBg/20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
+            <p>&copy; 2026 Issa Yakub Olamide. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 sm:mt-0">
+                <a href="https://x.com/Maestro_yky" target="_blank" class="hover:text-accent transition flex items-center gap-1.5"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
+                <a href="https://web.facebook.com/kubzyolamide/" target="_blank" class="hover:text-fbBlue transition flex items-center gap-1.5"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="mailto:kubzyolamide@gmail.com" class="hover:text-accent transition">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
